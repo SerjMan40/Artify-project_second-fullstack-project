@@ -1,0 +1,27 @@
+.content {
+  margin: 20px 20px;
+  display: grid;
+  grid-template-columns: 3fr 4fr 2fr;
+  align-items: center;
+  gap: 1rem;
+  &__h2 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    order: 3;
+    font-size: 2rem;
+  }
+  &__section {
+    background-color: burlywood;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 90%;
+    padding: 1rem;
+    font-size: 1.3rem;
+    border: solid 2px green;
+    align-items: center;
+  }
+  
+}

@@ -1,0 +1,12 @@
+@use 'common';
+@use 'presets';
+@use 'components/carousel';
+@use 'components/content';
+@use 'components/pictures';
+@use 'components/header';
+@use 'components/footer';
+
+* {
+  margin: 0;
+  padding: 0;
+}

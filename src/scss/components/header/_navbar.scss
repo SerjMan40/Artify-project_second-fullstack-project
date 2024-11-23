@@ -1,0 +1,13 @@
+.navbar {
+  width: 30%;
+  &__list {
+    display: flex;
+    justify-content:space-between;
+  }
+  &__link {
+    margin-right: 25px;
+   
+    list-style: none;
+    font-size: 1.3rem;
+  }
+}

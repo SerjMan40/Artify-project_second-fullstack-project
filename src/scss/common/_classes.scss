@@ -1,0 +1,15 @@
+@use '../presets/' as *;
+.container {
+  width: min(100% - $gap-lg, $container-primary);
+  margin-inline: auto;
+  &--sm {
+    width: min(100% - $gap-lg, $container-small);
+    margin-inline: auto;
+  }
+}
+
+.main-container {
+  background-color: aqua;
+  position: relative;
+  height: 350vh;
+}

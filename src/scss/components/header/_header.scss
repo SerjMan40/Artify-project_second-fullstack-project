@@ -1,0 +1,13 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(84, 60, 60, 1); 
+  height: 80px;
+  &--opacity {
+    background-color: rgba(84, 60, 60, 0.5); 
+  }
+}
