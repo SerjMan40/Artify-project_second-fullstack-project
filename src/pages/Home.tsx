@@ -1,15 +1,13 @@
 import Carousel from '../components/Carousel'
-import Content1 from '../components/Content1'
+import Articles from '../components/Articles'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
-import Pictures from '../components/Pictures'
 
 const Home = () => {
   return (
-    <div className='main-container'>
+    <div>
       <Header></Header>
-      <Pictures></Pictures>
-      <Content1></Content1>
+      <Articles></Articles>
       <Carousel></Carousel>
       <Footer></Footer>
     </div>

@@ -1,13 +1,56 @@
+@use '../../presets/' as *;
+
 .navbar {
-  width: 30%;
-  &__list {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10%;
+  background-color: rgba(128, 128, 128, 0.5);
+
+  &__container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+  margin-right: 50px;
+ }
+
+  &__list-main {
+    
     display: flex;
     justify-content:space-between;
+    gap: 30px;
   }
-  &__link {
-    margin-right: 25px;
-   
+  &__list-user {
+    
+    display: flex;
+    justify-content:end;
+    gap: 50px;
+  }
+  &__item-main {
+       
     list-style: none;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+  }
+&__item-user {
+  list-style: none;
+}
+
+
+  &__link-user { 
+    @include background-svg("../assets/svg/user.svg", 25px, 25px);
+    
+  }
+  &__link-cart {
+    @include background-svg("../assets/svg/cart.svg", 25px, 25px);
+  }
+  &__link-todos {
+    @include background-svg("../assets/svg/todos.svg", 25px, 25px);
+  }
+  &__link-comment {
+    @include background-svg("../assets/svg/comment.svg", 25px, 25px);
   }
 }

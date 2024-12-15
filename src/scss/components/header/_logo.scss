@@ -1,31 +1,9 @@
 .logo {
-  margin-left: 25px;
-  width: 100px;
-  height: 100px;
-  background-image: url('../assets/png/moto.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-
-  &__move {
-    animation: move 15s linear infinite;
-
-    @keyframes move {
-      0% {
-        transform: translateX(0) scaleX(1);
-      }
-      47% {
-        transform: translateX(800px) scaleX(1);
-      }
-      50% {
-        transform: translateX(900px) scaleX(-1);
-      }
-      97% {
-        transform: translateX(0) scaleX(-1);
-      }
-      100% {
-        transform: translateX(0) scaleX(1);
-      }
-    }
+  margin-left: 50px ;
+  &__main{
+    padding: 10px;
+margin-right: 3px;
+border: 3px solid red;
+border-radius: 10px;
   }
 }

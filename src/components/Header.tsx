@@ -1,15 +1,20 @@
+import Navbar from './Header/Navbar'
+
 const Header = () => {
   return (
-    <header className='header header--opacity'>
-      <div className='logo logo__move'></div>
-      <nav className='navbar'>
-        <ul className='navbar__list'>
-          <li className='navbar__link'>Главная</li>
-          <li className='navbar__link'>Галерея</li>
-          <li className='navbar__link'>Корзина</li>
-          <li className='navbar__link'>Регистрация</li>
-        </ul>
-      </nav>
+    <header className='header'>
+      <div className='title'>
+        <h1>Artify</h1>
+        <div>
+          <a className='title__btn' href=''>
+            About Us
+          </a>
+          <a className='title__btn' href=''>
+            Gallery
+          </a>
+        </div>
+      </div>
+      <Navbar></Navbar>
     </header>
   )
 }

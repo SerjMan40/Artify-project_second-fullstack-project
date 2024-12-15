@@ -1,0 +1,9 @@
+@mixin background-svg($path, $width, $height,) {
+  background-image: url(#{$path});
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: $width;
+  height: $height;
+  list-style: none;
+}
