@@ -103,7 +103,6 @@ a {
   justify-content: space-between;
   align-items: center;
   height: 10%;
-  background-color: rgba(128, 128, 128, 0.5);
 }
 .navbar__container {
   height: 100%;
@@ -169,19 +168,33 @@ a {
 .title {
   position: absolute;
   font-size: 4rem;
-  color: bisque;
+  color: rgb(183, 213, 61);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.title__btn {
+.title__container {
+  margin-top: 20px;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+.title__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(73, 67, 67, 0.7);
+  width: 45%;
   font-size: 2rem;
   text-decoration: none;
-  border: solid 2px;
+  color: rgb(183, 213, 61);
+  border: solid 2px rgb(183, 213, 61);
+  border-radius: 10px;
 }
 
 .logo {
   margin-left: 50px;
+  font-size: 1.4rem;
 }
 .logo__main {
   padding: 10px;
