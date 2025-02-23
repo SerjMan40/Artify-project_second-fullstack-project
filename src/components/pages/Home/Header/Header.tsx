@@ -1,4 +1,5 @@
-import Navbar from './Header/Navbar'
+import Navbar from "./Navbar/Navbar"
+
 
 const Header = () => {
   return (
@@ -6,11 +7,12 @@ const Header = () => {
       <div className='title'>
         <h1>Artify</h1>
         <div className='title__container'>
-          
-            <a className='title__link' href=''>About Us</a>
-            <a className='title__link' href=''>Gallery</a>
-          
-         
+          <a className='title__link' href=''>
+            About Us
+          </a>
+          <a className='title__link' href=''>
+            Gallery
+          </a>
         </div>
       </div>
       <Navbar></Navbar>

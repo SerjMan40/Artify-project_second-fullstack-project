@@ -7,8 +7,8 @@
   display:flex;
   justify-content: space-between;
   align-items: center;
-  height: 10%;
-
+  height: 40%;
+  @include media("sm") {background-color: red};
 
   &__container {
   height: 100%;

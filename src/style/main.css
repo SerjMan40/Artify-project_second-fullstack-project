@@ -104,6 +104,11 @@ a {
   align-items: center;
   height: 10%;
 }
+@media (max-width: 479.8px) {
+  .navbar {
+    height: 20%;
+  }
+}
 .navbar__container {
   height: 100%;
   display: flex;
