@@ -1,4 +1,5 @@
-@use '../presets/' as *;
+@use "sass:map";
+@use '../presets/variables' as *;
 
 @mixin background-svg($path, $width, $height,) {
   background-image: url(#{$path});
@@ -10,18 +11,19 @@
   list-style: none;
 }
 
-// @mixin media($size, $type: "max", $dimension: "width") {
-//   $bp: map-get($breakpoints, $size);
+@mixin media($size, $type: "max", $dimension: "width") {
+  @debug "XS breakpoint: #{map.get($breakpoints, 'xs')}";
+  $bp: map.get($breakpoints, $size);
 
-//   @if $bp {
-//     @if $type == "max" {
-//       @media (max-#{$dimension}: #{$bp - 0.2px}) { @content; }
-//     } @else if $type == "min" {
-//       @media (min-#{$dimension}: #{$bp}) { @content; }
-//     } @else {
-//       @error "Invalid media query type: #{$type}. Use 'max' or 'min'.";
-//     }
-//   } @else {
-//     @error "Breakpoint #{$size} not found!";
-//   }
-// }
+  @if $bp {
+    @if $type == "max" {
+      @media (max-#{$dimension}: #{$bp - 0.2px}) { @content; }
+    } @else if $type == "min" {
+      @media (min-#{$dimension}: #{$bp}) { @content; }
+    } @else {
+      @error "Invalid media query type: #{$type}. Use 'max' or 'min'.";
+    }
+  } @else {
+    @error "Breakpoint #{$size} not found!";
+  }
+}

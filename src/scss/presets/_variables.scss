@@ -1,4 +1,3 @@
-
 $font-size: 16px;
 $font-family: 'Roboto', sans-serif;
 $leter-spacing: 0.1em;
@@ -16,10 +15,11 @@ $gap-lg: calc($gap * 2);
 }
 
 $breakpoints: (
-  "xs": 480px,
-  "sm": 576px,
-  "md": 768px,
-  "lg": 992px,
-  "xl": 1200px,
-  "ul": 1340px
+  'xs': 480px,
+  'sm': 576px,
+  'md': 768px,
+  'lg': 992px,
+  'xl': 1200px,
+  'ul': 1340px,
 );
+
