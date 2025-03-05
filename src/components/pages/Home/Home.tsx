@@ -1,16 +1,20 @@
 
+import ParallaxBackground from "../../effects/ParallaxBackground"
 import Footer from "../../Footer"
-import Articles from "./Articles/Articles"
-import Carousel from "./Carousel/Carousel"
+import Articles from "./Articles"
+import Carousel from "./Carousel"
 import Header from "./Header/Header"
+import Slider from "./Slider"
 
 const Home = () => {
   return (
-    <div>
-      <Header></Header>
-      <Articles></Articles>
-      <Carousel></Carousel>
-      <Footer></Footer>
+    <div className="container">
+      <ParallaxBackground />
+      <Header />
+      <Articles />
+      <Slider />
+      <Carousel />
+      <Footer />
     </div>
   )
 }

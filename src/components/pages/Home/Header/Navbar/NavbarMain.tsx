@@ -1,20 +1,25 @@
+import User from './User'
 
 const NavbarMain = () => {
   return (
-    <div><ul className='navbar__list-main'>
-    <li className='navbar__item-main'>
-      <a href=''>Home</a>
-    </li>
-    <li className='navbar__item-main'>
-      <a href=''>Gellery</a>
-    </li>
-    <li className='navbar__item-main'>
-      <a href=''>About Us</a>
-    </li>
-    <li className='navbar__item-main'>
-      <a href=''>Contacts</a>
-    </li>
-  </ul></div>
+    <ul className='navbar__list-main'>
+      <li className='navbar__item-main'>
+        <a className='navbar__link'>About Us</a>
+      </li>
+      <li className='navbar__item-main'>
+        <a href='' className='navbar__link'>
+          Gallery
+        </a>
+      </li>
+      <li className='navbar__item-main'>
+        <a href='' className='navbar__link'>
+          Contacts
+        </a>
+      </li>
+      <li>
+        <User />
+      </li>
+    </ul>
   )
 }
 

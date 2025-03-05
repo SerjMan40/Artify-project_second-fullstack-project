@@ -1,0 +1,12 @@
+.parallax-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;  
+  height: 100vh;
+  background-image: url("https://picsum.photos/id/314/4608/3072");
+  background-size:cover;
+  background-repeat: no-repeat;
+
+  z-index: -10;
+}

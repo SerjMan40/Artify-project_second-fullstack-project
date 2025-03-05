@@ -1,11 +1,12 @@
 @use 'common';
 @use 'presets';
 @use 'components/carousel';
-@use 'components/content';
-@use 'components/pictures';
+@use 'components/slider';
 @use 'components/header';
 @use 'components/footer';
-@use 'misk';
+@use 'components/articles';
+@use 'components/effects';
+
 
 * {
   margin: 0;

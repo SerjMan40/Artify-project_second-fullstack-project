@@ -1,6 +1,11 @@
+@use '../../presets/' as *;
 .logo {
   margin-left: 50px;
   font-size: 1.4rem;
+  @include media ("xs") {
+    margin-left: 20px;
+    font-size: 1.2rem;
+  };
   &__main{
     padding: 10px;
 margin-right: 3px;
