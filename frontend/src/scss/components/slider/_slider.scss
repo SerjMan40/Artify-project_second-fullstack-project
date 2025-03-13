@@ -1,0 +1,69 @@
+@use '../../presets/' as *;
+
+.slider-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+.slider {
+  width: 90%;
+  height: 90%;
+  position: relative;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-image: url(https://picsum.photos/id/29/4000/2670);
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  &:hover {
+    .slider__prev-control,
+    .slider__play-pause-control,
+    .slider__next-control {
+      opacity: 1;
+    }
+  }
+
+  &__prev-control {
+    @extend %include-slider-controls;
+    left: 20px;
+    transform: translateY(-50%);
+  }
+  &__play-pause-control {
+    @extend %include-slider-controls;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &__next-control {
+    @extend %include-slider-controls;
+    right: 20px;
+    transform: translateY(-50%);
+  }
+  &__prev-icon {
+    @include background-svg  ('../assets/svg/prev.svg');
+    
+  }
+  &__play-icon {
+    @include background-svg  ('../assets/svg/play.svg');
+  }
+  &__pause-icon {
+    @include background-svg  ('../assets/svg/next.svg');
+  }
+  &__next-icon {
+    @include background-svg  ('../assets/svg/next.svg');
+  }
+  &__top-left-control {
+    position: absolute;
+    top: -50px;
+    left: 10%;
+    transform: translateX(-50%);
+  }
+
+  &__top-right-control {
+    position: absolute;
+    top: -50px;
+    left: 90%;
+    transform: translateX(-50%);
+  }
+}

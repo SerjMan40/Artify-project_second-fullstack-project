@@ -1,0 +1,9 @@
+.comment-carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 100px;
+  border: solid 2px red; 
+  background-color: aliceblue;
+  font-size: clamp(2rem, 5vw, 10rem);
+}

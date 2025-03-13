@@ -1,0 +1,15 @@
+@use 'common';
+@use 'presets';
+@use 'components/carousel';
+@use 'components/slider';
+@use 'components/header';
+@use 'components/footer';
+@use 'components/articles';
+@use 'components/effects';
+@use 'components/forms';
+
+
+* {
+  margin: 0;
+  padding: 0;
+}

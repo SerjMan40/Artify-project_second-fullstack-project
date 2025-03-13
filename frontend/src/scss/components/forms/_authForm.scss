@@ -1,0 +1,52 @@
+@use '../../presets/' as *;
+
+.auth-form {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 300px;
+  width: 100%;
+  padding: 30px;
+  background: rgba(242, 243, 245, 0.7);
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  &__title {
+    font-size: 1.8rem;
+  }
+
+  &__field {
+    margin: 20px auto;
+
+    & input {
+      font-size: 1.1rem;
+      border-radius: 5px;
+
+      padding: 8px;
+    }
+  }
+
+  &__controls {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    & button {
+      @include button-styles();
+    }
+  }
+
+  &__error {
+    color: red;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  &__close {
+    position: absolute;
+    padding: 15px;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    background-image: url(../assets/svg/closeX.svg);
+  }
+}
