@@ -2,9 +2,9 @@ import {useEffect, useState} from 'react'
 import {useDispatch, useSelector} from 'react-redux'
 import {AppDispatch, RootState} from '../../redux/store'
 import {fetchData} from '../../redux/thunks/fetchData'
-import {ImageCarouselHook} from '../../types/interfaces'
+import {RandomAvtoSliderHook} from '../../types/interfaces'
 
-export const useImageCarousel = ({timeIntervalSet, size, numImages}: ImageCarouselHook) => {
+export const useRandomAvtoSlider = ({timeIntervalSet, size, numImages}: RandomAvtoSliderHook) => {
   const dispatch = useDispatch<AppDispatch>()
   const imgData = useSelector((state: RootState) => state.items.data)
   const [images, setImages] = useState<string[]>([])

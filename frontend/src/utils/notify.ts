@@ -14,8 +14,8 @@ export const notifyLogin = (errorMessage: string) => {
   })
 }
 export const notifyGrittings = () => {
-  toast.success(' You login successfull!', {
-    position: 'top-center',
+  toast.success('You login successfull!', {
+    position:"bottom-right",
     autoClose: 5000,
     theme: 'colored',
   })

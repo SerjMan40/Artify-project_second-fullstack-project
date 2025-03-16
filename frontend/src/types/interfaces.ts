@@ -81,7 +81,7 @@ export interface PaymentFormState {
   name: string
   focus: Focused | undefined
 }
-export interface ImageCarouselHook {
+export interface RandomAvtoSliderHook {
   numImages?: number
   timeIntervalSet: number
   size: number

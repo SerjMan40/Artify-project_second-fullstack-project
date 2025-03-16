@@ -1,8 +1,8 @@
 %include-slider-controls {
   position: absolute;
   top: 50%;
- border: 1px solid white;
- border-radius: 50%;
+  border: 1px solid white;
+  border-radius: 50%;
   background-color: transparent;
   padding: 10px;
   display: flex;
@@ -11,6 +11,7 @@
   cursor: pointer;
   opacity: 0;
   transition: opacity 0.7s ease, scale 0.5s ease;
+  z-index: 500;
   &:hover {
     scale: 1.1;
     background-color: rgba(196, 214, 230, 0.2);

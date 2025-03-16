@@ -1,16 +1,16 @@
-import {useImageCarousel} from '../../hooks/useImageCarousel'
+import {useRandomAvtoSlider} from '../../hooks/useRandomAvtoSlider'
 
 const Articles = () => {
-  const { images: imagesSection1, activeIndex: activeIndexSection1 } = useImageCarousel({
+  const { images: imagesSection1, activeIndex: activeIndexSection1 } = useRandomAvtoSlider({
     timeIntervalSet: 5000,
     size: 1000
   });
-  const { images: imagesSection2, activeIndex: activeIndexSection2 } = useImageCarousel({
+  const { images: imagesSection2, activeIndex: activeIndexSection2 } = useRandomAvtoSlider({
     timeIntervalSet: 8000,
     size: 1000,
     numImages: 25,
   });
-  const { images: imagesSection3, activeIndex: activeIndexSection3 } = useImageCarousel({
+  const { images: imagesSection3, activeIndex: activeIndexSection3 } = useRandomAvtoSlider({
     timeIntervalSet: 4000,
     size: 1000,
     numImages: 10,
@@ -83,7 +83,7 @@ const Articles = () => {
               key={idx}
               src={src}
               alt={`Background ${idx}`}
-              className={`image ${idx === activeIndexSection3 ? 'section__image--active' : ''}`}
+              className={`section__image ${idx === activeIndexSection3 ? 'section__image--active' : ''}`}
             />
           ))}
         </div>
