@@ -1,21 +1,30 @@
-# ДЗ 68. Інтеграція Mongoose для повнофункціонального фулстек проекту.
+# Installation and Running the Project
 
-## Запуск проекту:
+## Installing Dependencies
 
-### 1.Запуск сервера:
+Install dependencies in three locations: the root folder, as well as the `frontend` and `backend` folders.
 
-Перейти до папки Back ***cd Back***, встановити залежності ***yarn install***, запустити сервер ***yarn start***.
+```sh
+# Install dependencies in the root folder
+yarn install
 
-Сервер буде прослуховувати порт 4000.
+# Install dependencies in the frontend folder
+cd frontend
+yarn install
 
-### 2. Запуск фронта:
+# Install dependencies in the backend folder
+cd ../backend
+yarn install
+```
 
-В іншому терміналі перейти до папки Front ***cd Front***, встановити залежності ***yarn install***, запустити фронт ***yarn start***.
+## Running the Project
 
-1. Під час реєстрації додається до бази новий користувач і створюється сесія.
+After installing all dependencies, return to the root folder and start the project:
 
-2. Після логіну – доступне меню.
+```sh
+cd ..
+yarn dev
+```
 
-3. Items завантажуються з бази даних.
+The project will start in development mode.
 
-4. На станице items возможно удаление елементів  с базы.
