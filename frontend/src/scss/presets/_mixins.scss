@@ -13,7 +13,6 @@
 }
 
 @mixin media($size, $type: 'max', $dimension: 'width') {
-  @debug "XS breakpoint: #{map.get($breakpoints, 'xs')}";
   $bp: map.get($breakpoints, $size);
 
   @if $bp {
@@ -69,9 +68,8 @@
     }
   }
 }
- @mixin form-styles() {
-
- }
+@mixin form-styles() {
+}
 @mixin moving-menu($top: 40px, $left: -125px) {
   position: absolute;
   top: $top;

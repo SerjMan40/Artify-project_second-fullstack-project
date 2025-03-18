@@ -27,7 +27,6 @@ const Articles = () => {
             exercitationem molestias itaque facilis sunt quibusdam corporis aliquam laudantium nemo
             nulla, tenetur reprehenderit corrupti sapiente? Culpa harum ipsam unde omnis esse id
             voluptas optio, voluptate ea aspernatur. nulla, tenetur reprehenderit corrupti sapiente?
-            Culpa harum ipsam unde omnis esse id voluptas optio, voluptate ea aspernatur.
           </p>
         </div>
         <div className='section__image-container section__image--first'>
